@@ -32,7 +32,7 @@ export function MobileNav() {
       <Sheet open={open} onOpenChange={setOpen}>
         <SheetContent side="left" className="w-64 border-[var(--color-border)] bg-[var(--color-bg)] p-0">
           <SheetTitle className="sr-only">Navigation</SheetTitle>
-          <div className="px-4 py-4 border-b border-[var(--color-border)]"><Logo href="/app" /></div>
+          <div className="px-4 py-4 border-b border-[var(--color-border)]"><Logo href="/" /></div>
           <nav className="flex flex-col gap-0.5 p-2 text-sm">
             {items.map(({ href, label, icon: Icon }) => {
               const active = pathname === href;

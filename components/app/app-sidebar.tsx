@@ -16,7 +16,7 @@ export function AppSidebar() {
   const pathname = usePathname();
   return (
     <aside className="hidden w-56 shrink-0 flex-col border-r border-[var(--color-border)] bg-[var(--color-bg)] md:flex">
-      <div className="px-4 py-4"><Logo href="/app" /></div>
+      <div className="px-4 py-4"><Logo href="/" /></div>
       <nav className="flex flex-col gap-0.5 px-2 py-2 text-sm">
         {items.map(({ href, label, icon: Icon }) => {
           const active = pathname === href;
