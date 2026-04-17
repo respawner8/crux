@@ -8,7 +8,7 @@ export function Hero() {
            style={{ background: "radial-gradient(circle, rgba(139,92,246,0.55) 0%, transparent 70%)" }} />
       <div className="relative mx-auto max-w-4xl text-center">
         <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-1 text-xs text-[var(--color-text-muted)]">
-          <span className="inline-block h-1.5 w-1.5 rounded-full bg-violet-400" />
+          <span aria-hidden="true" className="inline-block h-1.5 w-1.5 rounded-full bg-violet-400" />
           New · AI meeting copilot
         </div>
         <h1 className="text-gradient text-5xl font-semibold tracking-tighter md:text-7xl">
