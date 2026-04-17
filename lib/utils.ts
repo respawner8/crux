@@ -10,9 +10,9 @@ import type { Meeting } from "./types";
 export function relativeDate(iso: string): string {
   const d = new Date(iso);
   const ms = Date.now() - d.getTime();
-  const mins = Math.round(ms / 60_000);
-  const hrs  = Math.round(ms / 3_600_000);
-  const days = Math.round(ms / 86_400_000);
+  const mins = Math.floor(ms / 60_000);
+  const hrs  = Math.floor(ms / 3_600_000);
+  const days = Math.floor(ms / 86_400_000);
   if (mins < 60) return `${mins}m ago`;
   if (hrs < 24) return `${hrs}h ago`;
   if (days < 2) return "Yesterday";
